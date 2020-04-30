@@ -2,11 +2,14 @@
   "name": "jsstore_typescript_example",
   "version": "1.0.0",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "jquery": "^3.3.1",
-    "jsstore": "^2.9.2"
+    "jquery": "^3.5.0",
+    "jsstore": "^2.9.2",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "css-loader": "^0.28.11",
@@ -16,5 +19,6 @@
     "typescript": "^2.7.2",
     "webpack": "^4.1.1",
     "webpack-cli": "^2.0.12"
-  }
+  },
+  "snyk": true
 }
